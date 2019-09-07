@@ -11,5 +11,5 @@ for name in student_names:
 for name in student_names:
     if name is 'haris':
         continue
-        print('found haris')                # will not be executed
+        # print('found haris')                # will not be executed
     print('curren tly testing ' + name)
