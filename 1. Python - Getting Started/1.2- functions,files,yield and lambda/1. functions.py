@@ -1,7 +1,12 @@
 student_list = []
 
 
-def add_student(name, id=0):            # 2nd argument is optional
+def add_student(name, id=0):
+    """
+    Adds a student in the student list
+    :param name: string - student-name
+    :param id:   int - student id
+    """
     student = {"name": name, "student_id": id}
     student_list.append(student)
 
