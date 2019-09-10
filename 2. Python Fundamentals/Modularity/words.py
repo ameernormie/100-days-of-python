@@ -48,7 +48,7 @@ def main(url):
 
 if __name__ == '__main__':
     # Accept the url via a command line argument
-    main(sys.argv[1])
+    main(sys.argv[1])       # The 0th argument is the filename
 
 
 # 'http://sixty-north.com/c/t.txt'
