@@ -13,9 +13,14 @@ def sqrt(x):
     Raises:
         ValueError: if x is negative
     """
-    if x < 0:
-        raise ValueError(
-            "Cannot compute square root of negative number {}".format(x))
+
+    try:
+        if x < 0:
+            raise ValueError(
+                "Cannot compute square root of negative number {}".format(x))
+    except ValueError as e:
+        print(e, file=sys.stderr)
+        return
 
     guess = x
     i = 0
