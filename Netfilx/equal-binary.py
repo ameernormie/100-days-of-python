@@ -20,10 +20,23 @@ Output: [-1, -1]
 
 
 def return_three_segs(input, divider):
+    """ Divides the input in three equal segments based on the divider
+
+    Returns:
+        A tuple of three segments
+    """
     return input[:divider], input[divider: divider*2], input[divider*2:]
 
 
-def divide(input):
+def equal_binaries(input):
+    """ Determines if the input has equal binary values if it's divided in 3 parts
+
+    Args:
+        input: list stream of binaries
+
+    Returns:
+        index of first and third segment in list if equal binary values exist otherwise [-1,-1]
+    """
     manipulated_array = False
     if not input or len(input) < 3:
         return [-1, -1]
