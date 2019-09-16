@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Given an array X of 0s and 1s, divide the array in to 3 non empty parts 
 such that all of these parts represent the same binary value
@@ -48,8 +49,19 @@ def equal_binaries(input):
     else:
         pass
     one, two, three = return_three_segs(input, len(input)//3)
-    print('one two three ', one, two, three)
     if one == two == three:
         return [0, (len(input)//3 * 2) - 1 if manipulated_array else len(input)//3 * 2]
     else:
         return [-1, -1]
+
+
+def run_binary_equals():
+    input_one = [1, 0, 1, 0, 1]
+    input_two = [1, 1, 0, 1, 1]
+
+    print(equal_binaries(input_one))
+    print(equal_binaries(input_two))
+
+
+if __name__ == '__main__':
+    run_binary_equals()
