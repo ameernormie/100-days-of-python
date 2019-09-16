@@ -25,6 +25,8 @@ def return_three_segs(input, divider):
 
 def divide(input):
     manipulated_array = False
+    if not input or len(input) < 3:
+        return [-1, -1]
     if len(input) % 3 is 2:
         manipulated_array = True
         input = [0] + input
