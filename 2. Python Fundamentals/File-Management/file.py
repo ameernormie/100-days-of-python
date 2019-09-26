@@ -12,7 +12,7 @@ g = open('wasteland.txt', mode='rt', encoding='utf-8')
 g.read(30)      # Read first 30 characters
 g.read()        # Read rest of the characters
 g.read()        # Will result in empty string because whole file has been read
-
+# comment
 g.seek(0)       # Seek the file from 0 so it can be read again
 
 """ REad lines"""
