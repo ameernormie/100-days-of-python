@@ -19,3 +19,5 @@ million_squares         # <generator object <genexpr> at 0x1005d9550>
 
 """Calculate the sum of first 10 million squares using the built-in sum"""
 sum(x*x for x in range(1, 10000001))
+
+# generators
