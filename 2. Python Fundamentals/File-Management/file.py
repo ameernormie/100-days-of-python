@@ -1,24 +1,12 @@
-f = open('wasteland.txt', mode='wt', encoding='utf-8')
-
-f.write('What is going on?')
-f.write('Nothing just \n')
-f.write('chilling and shit')
-
-f.close()
-
-"""Reading a file"""
-g = open('wasteland.txt', mode='rt', encoding='utf-8')
-
-g.read(30)      # Read first 30 characters
-g.read()        # Read rest of the characters
-g.read()        # Will result in empty string because whole file has been read
-# comment
-g.seek(0)       # Seek the file from 0 so it can be read again
-
-""" REad lines"""
-g.readline()    # Reads a line until it finds a new line character
+import sys
 
 
-all_lines = g.readlines()   # Read all lines and store in list
+def main(filename):
+    f = open(filename, mode='rt', encoding='utf-8')
+    for line in f:
+        sys.stdout.write(line)
+    f.close()
 
-g.close()
+
+if __name__ == "__main__":
+    main(sys.argv[1])
