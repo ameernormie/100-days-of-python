@@ -34,6 +34,10 @@ def is_palindrome(x):
     >>> is_palindrome(121)
     True
     """
+
+    if x < 0:
+        return False
+
     digs = digits(x)
     for f, r in zip(digs, reversed(digs)):
         if f != r:
