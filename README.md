@@ -3,3 +3,4 @@
 Understand types and statements in python.
 
 Problems solving
+Python fundamentals
