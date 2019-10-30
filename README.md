@@ -1,5 +1,5 @@
 # 100 days of python
-
+Learn fundamentals of python
 Understand types and statements in python.
 
 python problems
