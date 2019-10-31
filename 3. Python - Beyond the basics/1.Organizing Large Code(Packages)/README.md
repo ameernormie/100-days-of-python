@@ -43,3 +43,10 @@ sys.path[-1]        # '/Library/Frameworks/Python.framework/Versions/3.7/lib/pyt
 ## PYTHONPATH
 we can add a path that is not in `sys.path` list by using the command `sys.path.append(path_name)`. 
 Another way to include the path in `sys.path` is to export `PYTHONPATH` using `export PYTHONPATH = path_name`. This path will be added in `sys.path` when python interpretor starts.
+
+## Making a Package
+- Make a directory with package name
+- Create a `__init__.py` file in it. This file ensures that this directory will be used as a package.
+- The source file when the package is imported is the `__init__.py`. we can check this by `package_name.__file__`
+- `__init__.py` can be used to write code and this code will be executed as soon as the package is imported. So, we can use this to hoist classes from our module
+
