@@ -49,4 +49,17 @@ Another way to include the path in `sys.path` is to export `PYTHONPATH` using `e
 - Create a `__init__.py` file in it. This file ensures that this directory will be used as a package.
 - The source file when the package is imported is the `__init__.py`. we can check this by `package_name.__file__`
 - `__init__.py` can be used to write code and this code will be executed as soon as the package is imported. So, we can use this to hoist classes from our module
+- We can use the heirarchy to our advantage here. This means that we can create sub-packages inside other packages
 
+
+## Summary
+1. Packages are modules that contain other modules
+2. Packages are generally implemented as directories containing a special `__init__.py` file.
+3. The `__init__.py` is executed when the package is imported.
+4. Packages can contain other packages which themselves are implemented with `__init__.py` files in direactories
+
+
+
+
+
+.
