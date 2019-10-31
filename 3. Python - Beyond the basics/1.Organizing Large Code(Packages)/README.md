@@ -60,6 +60,14 @@ Another way to include the path in `sys.path` is to export `PYTHONPATH` using `e
 
 
 
+### `__all__`
+list of attributes names imported via `from module import *`
+
+We can use this to choose what names should be exposed from our modules.
+
+```python
+__all__ = ['function_one', 'function_two']
+```
 
 
 .
