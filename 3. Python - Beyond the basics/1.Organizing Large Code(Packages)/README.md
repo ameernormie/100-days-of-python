@@ -69,5 +69,17 @@ We can use this to choose what names should be exposed from our modules.
 __all__ = ['function_one', 'function_two']
 ```
 
+## Executable directories
+we can put `__main__.py` to make a directory executable
+we can also make the zip file of directory and make the zip executable
+
+
+
+
+
+
+
+
+
 
 .
