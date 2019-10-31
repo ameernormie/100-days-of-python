@@ -21,3 +21,21 @@ urllib.request.__path__     # Error
 This hints at the general difference in `package` and `module`.
 **Packages are generally directories and modules are files**
 
+## sys.path
+python checks the path attribute of `sys` i.e. `sys.path`
+`sys.path` is nothing more than a list of directories. When you ask python to import a modules it starts with a first directory in `sys.path` and checks for an appropriate file. If no match is found `import error` is raised.
+
+```python
+import sys
+sys.path            # ['', '/path/', '...', '...']
+
+sys.path[0]         # ''
+"""
+This first entry in sys.path is empty string. This happens when you start the python interpretor 
+with no argument. It instructs python to search for modules first in the current directory
+"""
+
+sys.path[-1]        # '/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages'
+"""the last argument is site package directory where you can install third party modules"""
+
+```
