@@ -39,3 +39,7 @@ sys.path[-1]        # '/Library/Frameworks/Python.framework/Versions/3.7/lib/pyt
 """the last argument is site package directory where you can install third party modules"""
 
 ```
+
+## PYTHONPATH
+we can add a path that is not in `sys.path` list by using the command `sys.path.append(path_name)`. 
+Another way to include the path in `sys.path` is to export `PYTHONPATH` using `export PYTHONPATH = path_name`. This path will be added in `sys.path` when python interpretor starts.
