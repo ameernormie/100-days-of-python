@@ -75,7 +75,21 @@ we can also make the zip file of directory and make the zip executable
 
 
 
+# Recommended Project structure:
+```python
+project_name
+----__main__.py
+----project_name
+--------__init__.py
+--------more_source.py
+--------subPackage1
+------------__init__.py
+--------test
+------------__init__.py
+------------test_code.py
+setup.py
 
+```
 
 
 
